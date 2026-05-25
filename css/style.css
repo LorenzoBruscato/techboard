@@ -1,0 +1,131 @@
+/*Definição de fontes*/
+@font-face {
+  font-family: "Unbounded";
+  src: url(../fontes/Unbounded-Bold.ttf);
+  format: ("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url(../fontes/Poppins-Regular.ttf);
+  format: ("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilo Desktop*/
+
+body {
+  background-color: #0e1014;
+  color: #fff;
+}
+
+header img {
+  display: block;
+  margin: 75px 0 0 360px;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 span {
+  color: #8233e8;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 24px auto 0;
+  width: 792px;
+}
+
+a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #9747ff;
+  /* decidir largura e altura*/
+  width: 340px;
+  height: 66px;
+  /*forma de exebição*/
+  display: block;
+  /*Centralização */
+  text-align: center;
+  /*Centralizar verticalmente*/
+  line-height: 66px;
+  border-radius: 36px;
+  margin: 40px auto;
+  /*
+   margin: 100px 790px 10px 790px;
+
+ margin-top: 100px;
+  margin-right: 790px;
+  margin-bottom: 10px;
+  margin-left: 790px;*/
+
+  /*Substitui o heigt e withf
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 48px;
+  padding-left: 48px;*/
+}
+
+a:hover {
+  background-color: #8233e8;
+}
+
+section img {
+  display: block;
+  width: 792px;
+  height: 446px;
+  margin: 0 auto;
+}
+
+@media (max-withd: 768px) {
+  header img {
+    margin: 75px 0 0 60px;
+  }
+    p{
+      width: 648px;
+    }
+
+}
+
+@media (max-withd: 375px) {
+header img{
+margin: 32 0 0 16;
+}
+h1{
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+  width: 340px;
+}
+a{
+  font-size: 20px;
+  width: 251px;
+}
+section img{
+  width: 340px;
+  height: 230px;
+}
+}
